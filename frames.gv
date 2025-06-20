@@ -1,0 +1,17 @@
+digraph G {
+"base_footprint" -> "base_link"[label="Broadcaster: /base_footprint_to_base_link\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1750344223.282 sec old)\nBuffer length: 0.000 sec\n"];
+"odom" -> "base_footprint"[label="Broadcaster: /odom_to_base_footprint\nAverage rate: 10.192 Hz\nMost recent transform: 1750344223.298 ( -0.017 sec old)\nBuffer length: 4.808 sec\n"];
+"base_link" -> "camera_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1750344223.282 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "gnss_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1750344223.282 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "imu_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1750344223.282 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "laser_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1750344223.282 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "sensor_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1750344223.282 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "left_back_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.204 Hz\nMost recent transform: 1750344223.255 ( 0.027 sec old)\nBuffer length: 4.900 sec\n"];
+"base_link" -> "left_front_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.204 Hz\nMost recent transform: 1750344223.255 ( 0.027 sec old)\nBuffer length: 4.900 sec\n"];
+"base_link" -> "right_back_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.204 Hz\nMost recent transform: 1750344223.255 ( 0.027 sec old)\nBuffer length: 4.900 sec\n"];
+"base_link" -> "right_front_wheel"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10.204 Hz\nMost recent transform: 1750344223.255 ( 0.027 sec old)\nBuffer length: 4.900 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1750344223.282"[ shape=plaintext ] ;
+ }->"odom";
+}
